@@ -5,23 +5,25 @@
         <div id="noteForm" class="col d-flex justify-content-center">
           <div class="input-group">
             <div class="input-group-prepend">
-              <span class="input-group-text">Tell us about you plan to resolve the bug.</span>
+              <span
+                class="input-group-text font-weight-bold"
+              >Tell us about you plan to resolve the bug.</span>
             </div>
             <form @submit.prevent="makeNote">
               <input
                 v-model="newNote.content"
                 type="text"
                 aria-label="new note"
-                placeholder="note details here"
-                class="form-control"
+                placeholder="enter note details here"
+                class="form-control mb-1 mt-1"
               >
               
               <input
                 v-model="newNote.creator"
                 type="text"
                 aria-label="name who made note"
-                placeholder="your name here"
-                class="form-control"
+                placeholder="enter your name here"
+                class="form-control mb-1"
               >
               <button id="SUBMITnOte" type="submit-note">Submit the note</button>
             </form>
@@ -99,12 +101,14 @@ export default {
   margin-top: 10px;
 }
 .input-group-text {
-  background: rgb(254, 254, 254);
-  color: rgb(249, 99, 7);
+  background: rgb(249, 99, 7);
+  color: white;
   width: 400px;
   text-align: center;
   justify-content: center;
   font: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 span {
   text-align: center;

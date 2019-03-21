@@ -4,7 +4,7 @@
       <div class="Bugs">
         <table class="table">
           <thead>
-            <tr>
+            <tr class="bg-secondary text-white">
               <th scope="col"></th>
               <th scope="col">Make Comment</th>
               <th scope="col">Bug Title</th>

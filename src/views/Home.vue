@@ -6,31 +6,35 @@
         <div id="FORM" class="col d-flex justify-content-center">
           <div class="input-group">
             <div class="input-group-prepend">
-              <span class="input-group-text">Tell Us About Your Bugs</span>
+              <span class="input-group-text font-weight-bold">Tell Us About Your Bugs</span>
             </div>
             <form @submit.prevent="makeBugs">
               <input
                 v-model="newBug.creator"
                 type="text"
                 aria-label="user name"
-                placeholder="user name"
-                class="form-control"
+                placeholder="enter your user name"
+                class="form-control mb-1 mt-1"
               >
               <input
                 v-model="newBug.description"
                 type="text"
                 aria-label="bug description"
-                placeholder="bug description"
-                class="form-control"
+                placeholder="enter bug description"
+                class="form-control mb-1"
               >
               <input
                 v-model="newBug.title"
                 type="text"
                 aria-label="bug title"
-                placeholder="bug title"
-                class="form-control"
+                placeholder="enter bug title"
+                class="form-control mb-1"
               >
-              <button id="Submit-Bugger" type="submit">Submit the bug that's buggin' you</button>
+              <button
+                id="Submit-Bugger"
+                class="font-weight-bold"
+                type="submit"
+              >Submit the bug that's buggin' you</button>
             </form>
           </div>
         </div>
@@ -87,8 +91,8 @@ export default {
   margin-top: 10px;
 }
 .input-group-text {
-  background: rgb(254, 254, 254);
-  color: rgb(249, 99, 7);
+  background: rgb(249, 99, 7);
+  color: rgb(254, 254, 254);
   width: 400px;
   text-align: center;
   justify-content: center;

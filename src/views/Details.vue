@@ -5,7 +5,7 @@
         <div class="row my-2">
           <div class="col d-flex justify-content-center">
             <table class="table">
-              <thead class="bg-light">
+              <thead class="bg-secondary text-white font-weight-bold">
                 <tr>
                   <th scope="col"></th>
                   <th scope="col">Bug Title</th>

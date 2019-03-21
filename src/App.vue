@@ -9,43 +9,43 @@
               src="./assets/bugsbee-8.png"
               width="40"
               height="40"
-              class="d-inline-block align-top"
+              class="d-inline-block align-top ml-4"
               alt
             >
             <img
               src="./assets/bugsbutterfly-8.png"
               width="40"
               height="40"
-              class="d-inline-block align-top"
+              class="d-inline-block align-top ml-4"
               alt
             >
             <img
               src="./assets/bugsladybug-8.png"
               width="40"
               height="40"
-              class="d-inline-block align-top"
+              class="d-inline-block align-top mr-4 ml-4"
               alt
             >
-            <h3>Bug Log List and Application</h3>
+            <h3 class="mt-1 font-weight-bold">Bug Log List Application</h3>
             <img
               src="./assets/bugsladybug-8.png"
               width="40"
               height="40"
-              class="d-inline-block align-top"
+              class="d-inline-block align-top ml-4 mr-4"
               alt
             >
             <img
               src="./assets/bugsbutterfly-8.png"
               width="40"
               height="40"
-              class="d-inline-block align-top"
+              class="d-inline-block align-top mr-4"
               alt
             >
             <img
               src="./assets/bugsbee-8.png"
               width="40"
               height="40"
-              class="d-inline-block align-top"
+              class="d-inline-block align-top mr-4"
               alt
             >
           </div>
@@ -63,9 +63,16 @@
 </template>
 
 <style>
-router-link {
-  color: black;
+img {
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
+img:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
 #app {
   font-family: "BenchNine", sans-serif;
   font-weight: 500;
@@ -89,6 +96,7 @@ router-link {
   background-color: #16d1e6;
   width: 100%;
   justify-content: center;
+  padding: -10;
   /* padding-left: 100px;
   padding-right: 100px; */
 }
@@ -102,5 +110,9 @@ router-link {
   color: #16d1e6;
   font-family: "BenchNine", sans-serif, bold;
   justify-content: center;
+}
+h3 {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 </style>
