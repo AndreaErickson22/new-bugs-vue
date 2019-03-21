@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: 'github.com/AndreaErickson22/',
+  publicPath: '\'github.com/AndreaErickson22/new-bugs-vue\'',
   outputDir: 'docs',
   assetsDir: undefined,
   runtimeCompiler: undefined,
